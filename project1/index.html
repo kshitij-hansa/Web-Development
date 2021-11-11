@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('Image/flower.jpg');
+    }
+    .left{
+        position: absolute;
+        left: 34px;
+        top: 25px;
+        color: rgb(253, 251, 251);
+        display: inline-block;
+        /* border: 5px solid red; */
+    }
+    .left img{
+        width: 100px;
+        height: 75px;
+    }
+    .mid{
+        /* how to give place of center  */
+        display: block;
+        width: 40%;
+        margin: 15px auto;
+        /* Now you mid class is place in the mid of windo */
+        color: rgb(253, 251, 251);
+        /* border: 5px solid blue; */
+
+    }
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 25px;
+        display: inline-block;
+        color: rgb(253, 251, 251);
+        /* border: 5px solid green; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        padding: 20px;
+    }
+    .navbar li a:hover{
+        color: yellow;
+    }
+    .navbar li a.active{
+        color: brown;
+    }
+    .but
+    {
+        margin: 10px 4px;
+        padding: 10px;
+         background-color: black;
+         color: white;
+         border-radius: 20px;
+         border: solid 2px white;
+         /* cursor: pointer; */
+
+    }
+    .but:hover{
+    color: blue;
+    }
+    .cont{
+        color: white;
+        border:solid 5px white ;
+        margin: 110px 80px;
+        padding: 75px;
+        width: 40%;
+        border-radius: 30px;
+
+    }
+    .formdiv input{
+        text-align: center;
+        display: block;
+        width: 50%;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    .cont h1{
+        text-align: center;
+    }
+    #but1{
+        display: block;
+        /* width: 20px; */
+        margin: auto;
+        
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+        <div class="divleft">
+            <img src="Image/weed.png" alt="">
+            <!-- <div>This is Ones</div> -->
+        </div>
+        </div>
+        <div class="mid">
+            <!-- it is for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Types</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- it is for button -->
+            <input type="text" class="input">
+            <button class="but">Ok</button>
+        </div>
+    </header>
+    <div class="cont">
+     <h1>Join to protect the Nature</h1>
+     <form action="noaction.php">
+         <div class="formdiv">
+             <input type="text"name=""class="input" placeholder="Enter your Name">
+         </div>
+         <div class="formdiv">
+             <input type="text"name=""class="input" placeholder="Enter your Number">
+         </div>
+         <div class="formdiv">
+             <input type="text"name=""class="input" placeholder="Enter your Emale">
+         </div>
+         <div class="formdiv">
+             <input type="text"name=""class="input" placeholder="Enter your Password">
+         </div>
+         <button class="but" id="but1">Submit</button>
+     </form>
+    </div>
+</body>
+</html>

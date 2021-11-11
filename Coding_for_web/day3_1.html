@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        .navebar{
+            background-color: rgb(231, 228, 51);
+            border-radius: 30px;
+        }
+        /* when you float the itmes in the prantes class */
+        /*it over flow them     
+        that is why we used */
+        /* overflow: auto; */
+        .navebar ul{
+            overflow: auto;
+        }
+        .navebar li{
+            margin: 13px 20px;
+            float: left;
+            list-style: none;
+            color: white;
+            padding-top: 5px;
+
+            
+        }
+        .navebar li a{
+            padding: 10px ;
+            text-decoration: none;
+        }
+        .navebar li a:hover{
+            background-color: chartreuse;
+        }
+        .navebar ul div{
+            float: right;
+            padding: 15px 40px;        
+        }
+        .navebar input{
+            border: black solid 4px;
+            border-radius: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Class</a></li>
+                <li><a href="#">Place</a></li>
+                <div class="ser"><input type="text" placeholder="Serchbox"></div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

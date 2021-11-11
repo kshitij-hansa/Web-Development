@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(4,auto);
+/* In the grid we have a gap method  */
+            grid-gap: 3rem;
+
+            
+            
+        }
+        .box{
+            border: 3px solid green;
+            border-radius: 20px;
+            background-color: rgb(224, 88, 88);
+            padding: 10px;
+            /* we used the grid-gap in place of margin */
+            /* margin: 10px; */
+        }
+        /* If you wont to make Itme-1 is large then the (sum of 4 Itmes)then */
+        .box:first-child{
+/* In this your Itme-1 is increase its size of colume into 2 Itmes */
+            grid-column-start: 1;
+            grid-column-end: 3;
+/* In this your Itme-1 is increase its sixe of row into 2 Itmes */
+            grid-row-start: 1;
+            grid-row-end: 3;
+            /* and become a 1*4Itmes */
+        }
+        .container2{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns:120px 120px 120px; */
+            /* grid-template-columns:1fr 1fr 1fr; */
+/* If you wont to change the number of colum  By changing the Size of the web page */
+/* you used this method */
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            /* justify-content: center; */
+        }
+        .box2{
+            border: 5px solid rgb(1, 58, 1);
+            border-radius: 20px;
+            background-color: rgb(243, 247, 18);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Itmes-1</div>
+        <div class="box">Itmes-2</div>
+        <div class="box">Itmes-3</div>
+        <div class="box">Itmes-4</div>
+        <div class="box">Itmes-5</div>
+        <div class="box">Itmes-6</div>
+        <div class="box">Itmes-7</div>
+        <div class="box">Itmes-8</div>
+        <div class="box">Itmes-9</div>
+        <div class="box">Itmes-10</div>
+        <div class="box">Itmes-11</div>
+        <div class="box">Itmes-12</div>
+    </div>
+    <hr style="height: 5px; background-color: #000;">
+    <div class="container2">
+        <div class="box2">Itmes-1</div>
+        <div class="box2">Itmes-2</div>
+        <div class="box2">Itmes-3</div>
+        <div class="box2">Itmes-4</div>
+        <div class="box2">Itmes-5</div>
+        <div class="box2">Itmes-6</div>
+        <div class="box2">Itmes-7</div>
+        <div class="box2">Itmes-8</div>
+        <div class="box2">Itmes-9</div>
+        <div class="box2">Itmes-10</div>
+        <div class="box2">Itmes-11</div>
+        <div class="box2">Itmes-12</div>
+    </div>
+</body>
+</html>

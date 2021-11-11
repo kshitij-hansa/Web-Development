@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow funtion</title>
+</head>
+<style>
+    .cont{
+        border: solid black 3px;
+        padding: 30px;
+        font-size: 30px;
+        background-color: rebeccapurple;
+        color: wheat;
+        align-items: center;
+        border-radius: 30px;
+
+    }
+</style>
+<body>
+    <div class="cont">
+        <h3>
+            this is a Arrow funtion
+        </h3>
+    </div>
+    <script>
+        // this is a normal funtion
+        function fun1(){
+            console.log('this is a fun1');
+        }
+        fun1();
+// this is a 2nd type of creating a funtion
+// this is know as Arrow funtion
+        let fun2 = ()=>{
+            console.log('this is know as Arrow funtion');
+        }
+        fun2();
+
+// if you wont to create a funtion which add 2 number in shot-cut method
+// this is shot-cut Method to write a funtion   
+        let sum =(a,b)=>a+b;
+
+    </script>
+</body>
+</html>

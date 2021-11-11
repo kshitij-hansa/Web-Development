@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS</title>
+</head>
+<body>
+    <div>
+        <h1>Event in JS</h1>
+        <p id="para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem dicta molestiae doloremque omnis labore voluptate tempora et consequuntur magni inventore sequi, placeat quia sunt totam officiis ullam fugiat ut? Maiores nam ab maxime ratione nobis error, doloremque reprehenderit aperiam voluptatum ipsam. Facere pariatur dicta quidem quae qui enim accusantium perspiciatis laborum quod atque! Mollitia corporis odit quis in ut? Sequi quas reiciendis rerum voluptates quod dolore aperiam recusandae quibusdam harum eveniet tempore autem officiis sint illo blanditiis ab architecto, quisquam a nobis. Omnis suscipit quas soluta cupiditate nesciunt ullam fuga illo dolore reiciendis quis sunt, vitae dolorum, obcaecati excepturi beatae ducimus quos autem provident veniam. Doloribus exercitationem excepturi tempora, illo libero error aliquid vitae itaque assumenda quas soluta incidunt tenetur velit sint iste dolorem enim dignissimos pariatur. Repellat, aspernatur asperiores voluptate natus eius, ab id ratione similique pariatur rerum repellendus quisquam reiciendis! Mollitia recusandae dolore quisquam cumque repudiandae sint earum obcaecati nostrum repellat dolorem alias fuga sit animi, velit provident commodi quibusdam rerum? Eaque tempora velit quos odit labore ipsa exercitationem quod, aliquid similique a saepe ipsum repudiandae recusandae ad rem, obcaecati magnam. Aspernatur repellendus repudiandae quia provident tempore, et suscipit deserunt obcaecati ullam nemo maxime, vitae dolorum nobis unde, iusto quis. Nesciunt autem quia reprehenderit iure. Non culpa iste nam tenetur adipisci, rerum, in mollitia illo consectetur tempore ipsum excepturi! Eligendi a laudantium accusamus voluptatibus expedita! Deserunt inventore nulla sit laboriosam, corrupti molestias dolorum dolore aspernatur esse itaque similique ipsum animi eius tenetur maiores. Ut, assumenda nihil! Numquam unde quaerat iste optio est vero perspiciatis laboriosam ab consectetur sequi debitis quam quisquam velit accusamus dicta aliquid commodi, voluptatum asperiores, dolore totam. Quisquam delectus dolor, natus ipsam dolorum voluptatem temporibus aut ullam necessitatibus accusantium illo quas itaque autem? Id nesciunt rem deserunt dolores sint eaque repellat dolorum similique debitis.
+        </p>
+            
+    </div>
+    <button id="but" onclick="hide()">Show/Hide</button>
+    <script>
+        console.log("Event in JS");
+        function hide(){
+            let but=document.getElementById('but');
+            let para=document.getElementById('para');
+            if (para.style.display !='none') {
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+        
+        </script>
+</body>
+</html>

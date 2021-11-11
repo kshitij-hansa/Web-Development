@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .contaner{
+            height: 400px;
+            width: 100%;
+            border: 3px solid black;
+
+            /* In this we initialize the contaner is a flex box */
+            display: flex;
+            /* property of flex Element */
+            /* It have direction in the continer */
+            
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+/* If you wont to wrape your flex box when the size of the windo is change thier for you used this  */
+            flex-wrap: wrap;
+            
+/* in this  you wont to center the Itmes  */
+            justify-content:center;
+/* in this you wont to add space between the Itme */
+            /* justify-content:space-between; */
+/* in this we wont to add equaly all the spaces between the all the Itmes  */
+            /* justify-content:space-evenly; */
+/* It is simeler to the upper one */
+            /* justify-content:space-around; */
+
+/* adding aligns property to the Box Itmes  */
+            align-items:center ;/*in this we directly center the Itmes in the box*/
+/* It is many types */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+        
+
+        }
+        .itme{
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            height: 200px;
+        }
+        #itme1{
+/* flex properties for a flex item */
+            order: 10;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        This is Flexbox
+    </h1>
+    <div class="contaner">
+        <div class="itme" id="itme-1">
+            Itme number 1
+
+        </div>
+        <div class="itme" id="itme-2">
+            Itme number 2
+
+        </div>
+        <div class="itme" id="itme-3">
+            Itme number 3
+
+        </div>
+        <div class="itme" id="itme-4">
+            Itme number 4
+
+        </div>
+        <div class="itme" id="itme-5">
+            Itme number 5
+
+        </div>
+        <div class="itme" id="itme-6">
+            Itme number 6
+
+        </div>
+    </div>
+</body>
+</html>

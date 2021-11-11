@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <!-- In this we add different types of fonts -->
+
+    <style>
+        *{
+            /* if you wont add any thing in the hole body you wright in this place  */
+          /* making background color */
+          /* background-color: burlywood; */
+          box-sizing: border-box;
+
+        }
+        .continar{
+            /* making background color  */
+            background-color: burlywood;
+            
+          
+            /* making Margin to the item */
+            margin: 30px;
+
+            /*Making Border to the item */
+            border: 10px solid coral;
+
+        }
+        /* making hole containar in a containar using Id */
+        #containar1{
+            background-color: rgb(175, 14, 46);
+            
+        }
+        /* in the container we add Alignment of first to fourth number box */
+        #first{
+            float: left;
+            width: 40%;
+        }
+        #secend{
+            float: left;
+            width: 50%;
+        }
+        #third{
+            /* float: left; */
+            width: 50%;
+             /* if your element is over lap  */
+            clear: both;    
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="containar1">
+        <h1>wellcome to the box</h1>
+    <div class="continar" id="first">
+        <h2>this is the 1st box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ratione facilis perspiciatis quas adipisci culpa assumenda illo, blanditiis id cumque, harum quam quisquam, distinctio eos facere saepe aliquid incidunt est eveniet hic? In dolorum rem quia, unde, excepturi modi quidem maiores odio reprehenderit optio perspiciatis perferendis ipsa commodi repudiandae temporibus similique. Iste recusandae modi eius neque. Vitae, impedit numquam nam dolor totam nulla quidem earum ut incm, quisquam molestias magnam, laborum sunt excepturi possimus eum dicta a repellendus asperiores numquam! Ipsam dignissimos temporibus ad molestias? Eveniet nesciunt nihil nam consectetur vero repellendus.</p>
+    </div>
+    <div class="continar" id="secend">
+        <h2>
+            this is a 2nd box
+        </h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas reiciendis iusto maxime sapiente accusamus quo non rem sed praesentium deleniti laudantium repudiandae temporibus ea ratione nobis velit porro possimus error laborum enim, perspiciatis quam! Deleniti repellat facere illo sed, laborum corrupti labore adipisci dicta voluptates perferendis mollitia quos praesentium qui nemo enim voluptas beatae obcaecati distinctio neque magnam incidunt veniam. Facilis iste itaque ratione ipsam ut laboriosam dolores similique earum accusantium! Nulla esse consectetur facere atque assumenda expedita, qui quaerat omnis ducimus consequatur saepe pariatur fugit odit minus nemo repudiandae blanditiis, voluptatem aperiam autem impedit? Expedita hic eveniet laboriosam totam!</p>
+    </div>
+    <div class="continar" id="third">
+        <h2>this is the 1st box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ratione facilis perspiciatis quas adipisci culpa assumenda illo, blanditiis id cumque, harum quamo nihil at totam fugit cum ducimus voluptatum illum facilis, esse praesentium odio autem hic, eveniet exercitationem dolorem explicabo in. Labore reprehenderit aut ipsa vero explicabo itaque, molestiae excepturi sed. Doloribus aut ab quas deleniti totam, quisquam molestias magnam, laborum sunt excepturi possimus eum dicta a repellendus asperiores numquam! Ipsam dignissimos temporibus ad molestias? Eveniet nesciunt nihil nam consectetur vero repellendus.</p>
+    </div>
+</div>
+</body>
+</html>

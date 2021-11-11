@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tools of grid</title>
+    <style>
+        .cont{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: 
+            'heder heder heder heder'
+            'Leftcol Leftcol Leftcol Rightcol';
+
+           
+        }
+        #heder{
+            padding: 10px;
+            border: 3px solid black ;
+            background-color: rebeccapurple;
+            grid-area: heder;
+        }
+        #Leftcol{
+            padding: 10px;
+            border: 3px solid black ;
+            background-color: red;
+            grid-area: Leftcol;
+        }
+        #Rightcol{
+            padding: 10px;
+            border: 3px solid black ;
+            background-color: blue;
+            grid-area: Rightcol;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div id="heder">
+            About About About About
+        </div>
+        <div id="Rightcol">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat debitis tenetur exercitationem labore impedit beatae explicabo soluta nostrum iste laudantium, facilis consequatur nihil, odit alias inventore recusandae quidem autem.
+        </div>
+        <div id="Leftcol">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit corporis maiores voluptatibus perspiciatis repudiandae facilis, ex neque esse quia mollitia odit ratione eos magni laudantium, libero vero nam nisi sunt adipisci culpa quae magnam recusandae saepe. Nemo, in earum.
+        </div>
+
+    </div>
+</body>
+</html>
